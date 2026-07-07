@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Contact Me</h1>
+
+<form method="POST">
+
+    <label>Name</label><br>
+    <input type="text" name="name"><br><br>
+
+    <label>Email</label><br>
+    <input type="email" name="email"><br><br>
+
+    <button type="submit">Send</button>
+
+</form>
+
+<h3>{{ message }}</h3>
+
+<br>
+
+<a href="/">Back to Home</a>
+
+</body>
+</html>
